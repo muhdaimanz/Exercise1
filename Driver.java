@@ -6,12 +6,26 @@ public class Driver {
 		//nemo adalah object, Fish adalah kelas
 		Fish nemo = new Fish(); 
 		nemo.Swim();
-		nemo.color = "red"; //tukar value
+		//nemo.color = "red"; //tukar value
+		nemo.SetColor("red"); //change here
 		nemo.Swim();
+		
+		//nemo.Eat(); //superclass call subclass method
 
-		Fish dory = new Fish(); //another object
-		dory.Swim();
-		dory.color = "green";
-		dory.Swim();
+		Shark fiery = new Shark();
+		fiery.Eat();
+		fiery.Swim();
+		fiery.SetSharpTeeth(130);
+		fiery.Eat();
+
+
+		//Fish dory = new Fish(); //another object
+		//dory.Swim();
+		//dory.color = "green";
+		//dory.SetColor("yellow"); //change here
+		//dory.Swim();
+
+		//Aquirium fancyAquirium = new Aquirium();
+		//fancyAquirium.fillFish();
 	}
 }
